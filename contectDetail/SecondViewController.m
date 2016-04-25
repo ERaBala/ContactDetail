@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"  %@  %@  %@  %@",_FName,_LName,_Age,_Address);
+    
+
+    self.FNameLable.text=_FName;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

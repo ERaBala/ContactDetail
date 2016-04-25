@@ -15,6 +15,12 @@
 		A62477661CA121F700FC448D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62477641CA121F700FC448D /* LaunchScreen.storyboard */; };
 		A62477711CA121F700FC448D /* contectDetailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62477701CA121F700FC448D /* contectDetailTests.m */; };
 		A624777C1CA121F700FC448D /* contectDetailUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A624777B1CA121F700FC448D /* contectDetailUITests.m */; };
+		A624778B1CA1243600FC448D /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A624778A1CA1243600FC448D /* FormViewController.m */; };
+		A624778D1CA1266900FC448D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A624778C1CA1266900FC448D /* AddressBook.framework */; };
+		A624778F1CA1267200FC448D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A624778E1CA1267200FC448D /* AddressBookUI.framework */; };
+		A62477911CA126A100FC448D /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62477901CA126A100FC448D /* ContactsUI.framework */; };
+		A62477931CA126C900FC448D /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62477921CA126C900FC448D /* Contacts.framework */; };
+		A62477961CA1374F00FC448D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62477951CA1374F00FC448D /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		A62477771CA121F700FC448D /* contectDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contectDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A624777B1CA121F700FC448D /* contectDetailUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contectDetailUITests.m; sourceTree = "<group>"; };
 		A624777D1CA121F700FC448D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62477891CA1243600FC448D /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		A624778A1CA1243600FC448D /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
+		A624778C1CA1266900FC448D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A624778E1CA1267200FC448D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		A62477901CA126A100FC448D /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		A62477921CA126C900FC448D /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		A62477941CA1374F00FC448D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = contectDetail/SecondViewController.h; sourceTree = "<group>"; };
+		A62477951CA1374F00FC448D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = contectDetail/SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62477931CA126C900FC448D /* Contacts.framework in Frameworks */,
+				A62477911CA126A100FC448D /* ContactsUI.framework in Frameworks */,
+				A624778F1CA1267200FC448D /* AddressBookUI.framework in Frameworks */,
+				A624778D1CA1266900FC448D /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,12 @@
 		A624774A1CA121F700FC448D = {
 			isa = PBXGroup;
 			children = (
+				A62477941CA1374F00FC448D /* SecondViewController.h */,
+				A62477951CA1374F00FC448D /* SecondViewController.m */,
+				A62477921CA126C900FC448D /* Contacts.framework */,
+				A62477901CA126A100FC448D /* ContactsUI.framework */,
+				A624778E1CA1267200FC448D /* AddressBookUI.framework */,
+				A624778C1CA1266900FC448D /* AddressBook.framework */,
 				A62477551CA121F700FC448D /* contectDetail */,
 				A624776F1CA121F700FC448D /* contectDetailTests */,
 				A624777A1CA121F700FC448D /* contectDetailUITests */,
@@ -110,6 +134,8 @@
 				A62477641CA121F700FC448D /* LaunchScreen.storyboard */,
 				A62477671CA121F700FC448D /* Info.plist */,
 				A62477561CA121F700FC448D /* Supporting Files */,
+				A62477891CA1243600FC448D /* FormViewController.h */,
+				A624778A1CA1243600FC448D /* FormViewController.m */,
 			);
 			path = contectDetail;
 			sourceTree = "<group>";
@@ -270,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62477961CA1374F00FC448D /* SecondViewController.m in Sources */,
 				A624775E1CA121F700FC448D /* ViewController.m in Sources */,
 				A624775B1CA121F700FC448D /* AppDelegate.m in Sources */,
+				A624778B1CA1243600FC448D /* FormViewController.m in Sources */,
 				A62477581CA121F700FC448D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = contectDetail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = testProgram.contectDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = contectDetail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = testProgram.contectDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ABPeoplePickerNavigationControllerDelegate,ABNewPersonViewControllerDelegate>
+{
+    ABNewPersonViewController *newPersonController;
+}
 
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+@property (weak, nonatomic) IBOutlet UITextField *phoneNoField;
+@property (weak, nonatomic) IBOutlet UITextField *Address1;
+@property (weak, nonatomic) IBOutlet UITextField *Address2;
+
+- (IBAction)ViewContects:(id)sender;
+- (IBAction)Save:(id)sender;
 
 @end
 
