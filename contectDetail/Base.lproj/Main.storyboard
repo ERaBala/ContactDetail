@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -34,42 +35,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWj-FD-BFz">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWj-FD-BFz">
                                 <rect key="frame" x="26" y="155" width="268" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRF-Kf-9IQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRF-Kf-9IQ">
                                 <rect key="frame" x="26" y="199" width="268" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrd-pD-UDH">
-                                <rect key="frame" x="26" y="342" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="Save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9L-mo-a4p"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEd-kG-HMX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEd-kG-HMX">
                                 <rect key="frame" x="202" y="342" width="92" height="30"/>
                                 <state key="normal" title="View Contect"/>
                                 <connections>
                                     <action selector="ViewContects:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rES-IH-1R7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thQ-EE-Sp4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thQ-EE-Sp4">
                                 <rect key="frame" x="20" y="242" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flw-mM-7ck">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flw-mM-7ck">
                                 <rect key="frame" x="20" y="280" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrd-pD-UDH">
+                                <rect key="frame" x="20" y="342" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="Save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9L-mo-a4p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jWj-FD-BFz" firstAttribute="leading" secondItem="dRF-Kf-9IQ" secondAttribute="leading" id="1f0-pB-VcG"/>
+                            <constraint firstItem="Flw-mM-7ck" firstAttribute="leading" secondItem="hrd-pD-UDH" secondAttribute="leading" id="2xL-PY-om0"/>
+                            <constraint firstItem="thQ-EE-Sp4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="41p-o7-wNn"/>
+                            <constraint firstItem="thQ-EE-Sp4" firstAttribute="trailing" secondItem="Flw-mM-7ck" secondAttribute="trailing" id="6oL-cB-emr"/>
+                            <constraint firstItem="hrd-pD-UDH" firstAttribute="top" secondItem="Flw-mM-7ck" secondAttribute="bottom" constant="32" id="7NV-mP-iSN"/>
+                            <constraint firstItem="jWj-FD-BFz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Fw-ik-KmY"/>
+                            <constraint firstItem="hrd-pD-UDH" firstAttribute="baseline" secondItem="HEd-kG-HMX" secondAttribute="baseline" id="8Tx-yP-HtH"/>
+                            <constraint firstItem="jWj-FD-BFz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="JvJ-5R-pgV"/>
+                            <constraint firstItem="dRF-Kf-9IQ" firstAttribute="centerX" secondItem="thQ-EE-Sp4" secondAttribute="centerX" id="MxN-gV-WZo"/>
+                            <constraint firstItem="jWj-FD-BFz" firstAttribute="trailing" secondItem="dRF-Kf-9IQ" secondAttribute="trailing" id="Zhs-l5-yfe"/>
+                            <constraint firstItem="Flw-mM-7ck" firstAttribute="top" secondItem="thQ-EE-Sp4" secondAttribute="bottom" constant="8" symbolic="YES" id="cqL-oj-YAV"/>
+                            <constraint firstItem="jWj-FD-BFz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="91" id="e36-ew-4QK"/>
+                            <constraint firstItem="thQ-EE-Sp4" firstAttribute="top" secondItem="dRF-Kf-9IQ" secondAttribute="bottom" constant="13" id="ogf-H3-aXb"/>
+                            <constraint firstItem="dRF-Kf-9IQ" firstAttribute="top" secondItem="jWj-FD-BFz" secondAttribute="bottom" constant="14" id="ohT-yY-GFW"/>
+                            <constraint firstItem="thQ-EE-Sp4" firstAttribute="leading" secondItem="Flw-mM-7ck" secondAttribute="leading" id="pva-kc-ewk"/>
+                            <constraint firstItem="dRF-Kf-9IQ" firstAttribute="trailing" secondItem="HEd-kG-HMX" secondAttribute="trailing" id="sRF-AH-wHi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Contect" id="GG5-7C-hWa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
